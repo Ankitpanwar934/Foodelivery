@@ -1,3 +1,3 @@
 import Display from "./Display";
 
-export {Display}
+export default {Display}

@@ -1,15 +1,15 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const Seperator = ({height, width, ...extraProps}) => {
+const Separator = ({height, width, ...extraProps}) => {
   <View style={{height, width, ...extraProps}}/>
 };
 
-Seperator.defaultProps = {
+Separator.defaultProps = {
     height: 0,
     width: 0,
 }
 
-export default Seperator
+export default Separator
 
 const styles = StyleSheet.create({})

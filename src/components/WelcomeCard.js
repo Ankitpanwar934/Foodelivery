@@ -3,10 +3,12 @@ import React from 'react'
 import Fonts from '../contants/Fonts'
 import Colors from '../contants/Colors'
 import Images from '../contants/Images'
+import Display from '../utils/Display'
+
 const WelcomeCard = ({title, content, image}) => {
   return (
     <View style={styles.container}>
-      <Image style={styles.image} source={Images[image]}/>
+      <Image style={styles.image} source={Images[image]} resizeMode='contain'/>
       <Text style={styles.titleText}>{title}</Text>
       <Text style={styles.contentText}>{content}</Text>
     </View>
@@ -20,14 +22,16 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
+        width: Display.setWidth(100)
     },
     image: {
-        height: 150,
-        width: 150
+        height: Display.setHeight(30),
+        width: Display.setWidth(60)
     },
     titleText: {
         fontSize: 22,
         fontFamily: Fonts.POPPINS_BOLD,
+        textAlign: 'center',
         color: Colors.DEFAULT_BLACK
     },
     contentText: {
