@@ -85,7 +85,7 @@ const SigninScreen = ({navigation}) => {
         <Text style={styles.signinButtonText}>Sign In</Text>
      </TouchableOpacity>
      <View style={styles.signupContainer}>
-        <Text style={styles.accountText}>Don't have an account?</Text>
+        <Text style={styles.accountText}>Don't have an account ?</Text>
         <Text style={styles.signupText} onPress={()=>navigation.navigate('Signup')}>Sign Up</Text>
      </View>
      <Text style={styles.orText}>OR</Text>

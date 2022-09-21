@@ -8,7 +8,8 @@ import SplashScreen from './src/screens/SplashScreen';
 import WelcomeScreen from './src/screens/WelcomeScreen';
 import SigninScreen from './src/screens/SigninScreen';
 import SignupScreen from './src/screens/SignupScreen';
-import ForgotPassword from './src/screens/ForgotPassword';
+import ForgotPasswordScreen from './src/screens/ForgotPasswordScreen';
+import RegisterPhoneScreen from './src/screens/RegisterPhoneScreen';
 
 const Stack = createStackNavigator();
 
@@ -16,11 +17,12 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{headerShown: false}}>
-        {/* <Stack.Screen name="Splash" component={SplashScreen}/> */}
-        {/* <Stack.Screen name="Welcome" component={WelcomeScreen}/> */}
+        <Stack.Screen name="Splash" component={SplashScreen}/>
+        <Stack.Screen name="Welcome" component={WelcomeScreen}/>
         <Stack.Screen name='Signin' component={SigninScreen}/>
         <Stack.Screen name='Signup' component={SignupScreen}/>
-        <Stack.Screen name='ForgotPassword' component={ForgotPassword}/>
+        <Stack.Screen name='ForgotPassword' component={ForgotPasswordScreen}/>
+        <Stack.Screen name='RegisterPhone' component={RegisterPhoneScreen}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -24,7 +24,7 @@ const ForgotPassword = ({navigation}) => {
      <View style={styles.headerContainer}>
         <Ionicons 
         name='chevron-back-outline' 
-        size={30} 
+        size={30}     
         onPress={() => navigation.navigate('Signin')}/>
         <Text style={styles.headerTitle}>Forgot Password</Text>
      </View>
